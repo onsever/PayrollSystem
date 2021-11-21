@@ -25,8 +25,7 @@ public class CommissionBasedPartTime extends PartTime {
         double rate = super.getRate();
         double hoursWorked = super.getHoursWorked();
         double total = rate * hoursWorked;
-        double commission = total + (total * getCommission());
-        return commission;
+        return total + (total * getCommission());
     }
 
     @Override
