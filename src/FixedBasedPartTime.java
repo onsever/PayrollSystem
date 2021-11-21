@@ -36,7 +36,7 @@ public class FixedBasedPartTime extends PartTime {
             System.out.println("Employee has no Vehicle registered");
         }
         else {
-            System.out.println("Employee has a " + getVehicle().getClass());
+            System.out.println("Employee has a " + getVehicle().getClass().getName());
             System.out.println("\t - " + getVehicle().getMake());
             System.out.println("\t - " + getVehicle().getPlate());
             getVehicle().printMyData();
